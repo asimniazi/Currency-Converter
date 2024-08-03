@@ -1,0 +1,178 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#mainHeading {
+  padding: 7px;
+  width: 55%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f39c12;
+  border-radius: 7px;
+}
+
+#mainHeading h1 {
+  text-align: center;
+  color: white;
+  font-weight: bolder;
+  font-size: 2rem;
+}
+
+#mainContent {
+  min-height: 77.5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#image img {
+  height: 357px;
+  width: 400px;
+  border-radius: 7px;
+  margin-right: 10px;
+}
+
+#mainBox {
+  width: 400px;
+  border-radius: 7px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /*box-shadow: h-offset v-offset blur-radius spread-radius color;
+  */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#mainBox h2 {
+  text-align: center;
+  background-color: #34495e;
+  color: white;
+  padding: 10px;
+  border-radius: 7px;
+}
+
+.form input {
+  width: 96.5%;
+  height: 30px;
+  outline: none;
+  border: 1px solid lightslategray;
+  border-radius: 7px;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+.dropDownMenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.From,
+.To {
+  display: flex;
+  align-items: center;
+}
+
+.dropDownMenu .fa-solid {
+  font-size: 35px;
+}
+
+.From select,
+.To select {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  margin-left: 10px;
+  font-size: 1rem;
+}
+
+.From img,
+.To img {
+  max-width: 2.5rem;
+}
+
+.conversionRate {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1rem;
+}
+
+.button {
+  background-color: #f39c12;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.button:hover {
+  background-color: #e67e22;
+}
+
+footer {
+  background-color: #34495e;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 20px;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 800px) {
+  #mainContent {
+    flex-wrap: wrap;
+  }
+
+  #image img {
+    margin: 50px 0 50px 0;
+    width: 435px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #image img {
+    width: auto;
+    margin: 50px 10px 50px 10px;
+  }
+
+  #mainHeading h1 {
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  #image img {
+    width: 250px;
+    height: 250px;
+  }
+  #mainHeading {
+    width: 100%;
+    border-radius: 7px;
+  }
+  #mainBox{
+    margin-left: 30px;
+    margin-right: 20px;
+  }
+}
